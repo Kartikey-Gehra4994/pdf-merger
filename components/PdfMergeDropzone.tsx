@@ -61,7 +61,7 @@ const PdfMergeDropzone = () => {
       a.remove();
       window.URL.revokeObjectURL(url);
       setFiles([]);
-    } catch (err) {
+    } catch {
       alert("An error occurred while merging PDFs.");
     }
     setMerging(false);
