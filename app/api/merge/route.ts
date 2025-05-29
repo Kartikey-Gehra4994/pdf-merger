@@ -9,7 +9,7 @@ import { getAuth } from "@clerk/nextjs/server";
 export async function POST(req: NextRequest) {
   const { userId } = getAuth(req);
   if (!userId) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    return NextResponse.json({ error: "Please Sign in to merge PDF files" }, { status: 401 });
   }
 
   // Connect to MongoDB
