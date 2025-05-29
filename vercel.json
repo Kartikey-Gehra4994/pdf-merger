@@ -2,8 +2,7 @@
   "functions": {
     "api/merge.ts": {
       "maxDuration": 10,
-      "memory": 1024,
-      "maxSize": "50mb"
+      "memory": 1024
     }
   }
 }
